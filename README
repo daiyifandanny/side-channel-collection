@@ -1,0 +1,7 @@
+A side channel attack collection. Mostly from other repositories with simple modification.
+
+Meltdown: verified to be working to reveal kernel memory (code). Original link: https://github.com/paboldin/meltdown-exploit
+
+Spectre: verified to be working to reveal certain memory location, the PoC code only reveals memory in its own address space (which is legal) to just show how it works, and that is what my scripts currently do. But this code is also able to reveal arbitrary address given as input. Original link: https://github.com/Eugnis/spectre-attack
+
+Prefetch: aim to break kaslr, which is not implemented on our system. So this is just running but I cannot verify if it can really work on our system. The result is not stable. Original link: https://github.com/xairy/kaslr-bypass-via-prefetch
